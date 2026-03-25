@@ -1,0 +1,190 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Francis' Modern Website</title>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700&display=swap" rel="stylesheet">
+    <style>
+        /* Reset */
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            font-family: 'Inter', sans-serif;
+            background: #f5f6fa;
+            color: #333;
+            line-height: 1.6;
+        }
+
+        a {
+            text-decoration: none;
+        }
+
+        /* Header Section */
+        header {
+            background: #000080;
+            color: #fff;
+            padding: 60px 20px;
+            text-align: center;
+        }
+
+        header h1 {
+            font-size: 2.5rem;
+            margin-bottom: 20px;
+        }
+
+        header p {
+            font-size: 1.2rem;
+        }
+
+        .btn {
+            display: inline-block;
+            margin: 10px 5px;
+            padding: 12px 25px;
+            background: #fff;
+            color: #4cd137;
+            font-weight: 600;
+            border-radius: 8px;
+            transition: 0.3s;
+        }
+
+        .btn:hover {
+            background: #e1f5d7;
+        }
+
+        /* Features Section */
+        .features {
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: center;
+            padding: 60px 20px;
+            gap: 30px;
+            background: #fff;
+        }
+
+        .feature-card {
+            background: #f1f2f6;
+            padding: 30px;
+            border-radius: 12px;
+            flex: 1 1 250px;
+            max-width: 300px;
+            text-align: center;
+            transition: transform 0.3s;
+        }
+
+        .feature-card:hover {
+            transform: translateY(-10px);
+        }
+
+        .feature-card img {
+            width: 80px;
+            margin-bottom: 20px;
+        }
+
+        .feature-card h3 {
+            margin-bottom: 15px;
+            color: #2f3640;
+        }
+
+        /* About Section */
+        .about {
+            display: flex;
+            flex-wrap: wrap;
+            align-items: center;
+            padding: 60px 20px;
+            gap: 40px;
+        }
+
+        .about img {
+            max-width: 100%;
+            border-radius: 12px;
+            flex: 1 1 300px;
+        }
+
+        .about-text {
+            flex: 1 1 300px;
+        }
+
+        .about-text h2 {
+            margin-bottom: 20px;
+            color: #2f3640;
+        }
+
+        .about-text p {
+            margin-bottom: 20px;
+            color: #718093;
+        }
+
+        /* Footer */
+        footer {
+            background: #2f3640;
+            color: #fff;
+            text-align: center;
+            padding: 30px 20px;
+        }
+
+        /* Responsive */
+        @media (max-width: 768px) {
+            .about {
+                flex-direction: column-reverse;
+                text-align: center;
+            }
+
+            .about-text {
+                margin-bottom: 20px;
+            }
+        }
+    </style>
+</head>
+<body>
+
+    <!-- Header Section -->
+    <header>
+        <h1>Hello Francis 👋</h1>
+        <p>Welcome to my modern Termux-built website!</p>
+        <a href="#" class="btn">Get Started</a>
+        <a href="#" class="btn">Learn More</a>
+    </header>
+
+    <!-- Features Section -->
+    <section class="features">
+        <div class="feature-card">
+            <img src="https://via.placeholder.com/80" alt="Fast">
+            <h3>Fast</h3>
+            <p>Lightning-fast performance for your projects and experiments.</p>
+        </div>
+        <div class="feature-card">
+            <img src="https://via.placeholder.com/80" alt="Responsive">
+            <h3>Responsive</h3>
+            <p>Looks great on mobile, tablet, and desktop screens.</p>
+        </div>
+        <div class="feature-card">
+            <img src="https://via.placeholder.com/80" alt="Modern">
+            <h3>Modern Design</h3>
+            <p>Sleek, clean, and professional layout with vibrant colors.</p>
+        </div>
+    </section>
+
+    <!-- About Section -->
+    <section class="about">
+        <img src="images/IMG_20260325_151028.jpg">
+        <div class="about-text">
+            <h2>About This Website</h2>
+            <p>This website is built using Termux on Android, showing that you can create professional web pages directly from your mobile device.</p>
+            <p>It uses modern web design principles, responsive layout, and clean visuals to make your content stand out.</p>
+            <a href="#" class="btn">Contact Me</a>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer>
+        &copy; 2026 Francis Victor Chimdindu. All rights reserved.
+    </footer>
+
+</body>
+</html>
+
